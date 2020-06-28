@@ -8,12 +8,12 @@
 import Foundation
 
 class InventoryStore: ObservableObject {
-    @ Published var sandwiches : [Inventory]
+    @ Published var items : [Inventory]
     
-    init(sandwiches: [Inventory] = []) {
-        self.sandwiches = sandwiches
+    init(items: [Inventory] = []) {
+        self.items = items
     }
 }
 
-let testStore = InventoryStore(sandwiches: testData)
+let testStore = InventoryStore(items: testData)
 

@@ -8,14 +8,12 @@
 import SwiftUI
 
 struct InventoryDetail: View {
-    let sandwich: Inventory
+    let item: Inventory
     @State private var zoomed = false
     
     var body: some View {
         VStack {
-           //Spacer(minLength: 0)
-            
-            Image(sandwich.thumbnailName)
+            Image(item.thumbnailName)
                 .resizable()
                 .cornerRadius(20)
                 .aspectRatio(contentMode: zoomed ? .fill : .fit)
@@ -25,18 +23,18 @@ struct InventoryDetail: View {
                         zoomed.toggle()
                     }
                 }
-            Text(sandwich.name)
+            Text(item.name)
                 .font(.title)
                 .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
-            Text(sandwich.description)
+            Text(item.description)
                 .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
-            Text("$\(sandwich.price, specifier: "%.2f")")
+            Text("$\(item.price, specifier: "%.2f")")
                 .font(.largeTitle)
                 .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
             
             Spacer(minLength: 0)
             
-            if sandwich.isSpicy && !zoomed {
+            if item.isSpicy && !zoomed {
                 HStack {
                     Spacer()
                     Label("Spicy", systemImage: "flame.fill")
@@ -49,19 +47,19 @@ struct InventoryDetail: View {
                 .transition(.move(edge: .bottom))
             }
         }
-        .navigationTitle(sandwich.name)
+        .navigationTitle(item.name)
         .edgesIgnoringSafeArea(.bottom)
     }
 }
 
-struct SandwichDetail_Previews: PreviewProvider {
+struct ItemDetail_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             NavigationView {
-                InventoryDetail(sandwich: testData[0])
+                InventoryDetail(item: testData[0])
             }
             NavigationView {
-                InventoryDetail(sandwich: testData[4])
+                InventoryDetail(item: testData[4])
             }
         }
     }

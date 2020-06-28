@@ -21,8 +21,6 @@
 		4CAE595C24A3FC3B005F1A86 /* Inventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE595A24A3FC3B005F1A86 /* Inventory.swift */; };
 		4CAE595E24A40B26005F1A86 /* InventoryDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE595D24A40B26005F1A86 /* InventoryDetail.swift */; };
 		4CAE595F24A40B26005F1A86 /* InventoryDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE595D24A40B26005F1A86 /* InventoryDetail.swift */; };
-		4CE3B6B424A8142500128BEA /* InventoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE3B6B324A8142500128BEA /* InventoryCell.swift */; };
-		4CE3B6B524A8142500128BEA /* InventoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE3B6B324A8142500128BEA /* InventoryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +36,6 @@
 		4CAE594B24A3F4DA005F1A86 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		4CAE595A24A3FC3B005F1A86 /* Inventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inventory.swift; sourceTree = "<group>"; };
 		4CAE595D24A40B26005F1A86 /* InventoryDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryDetail.swift; sourceTree = "<group>"; };
-		4CE3B6B324A8142500128BEA /* InventoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +73,6 @@
 				4CAE593A24A3F4D7005F1A86 /* ContentView.swift */,
 				4C72DE9B24A78D8C00BAA3FF /* Common.swift */,
 				4CAE595A24A3FC3B005F1A86 /* Inventory.swift */,
-				4CE3B6B324A8142500128BEA /* InventoryCell.swift */,
 				4CAE595D24A40B26005F1A86 /* InventoryDetail.swift */,
 				4C2DDB4024A444F900125A2C /* InventoryStore.swift */,
 				4CAE593B24A3F4DA005F1A86 /* Assets.xcassets */,
@@ -285,7 +281,6 @@
 				4CAE595B24A3FC3B005F1A86 /* Inventory.swift in Sources */,
 				4CAE595E24A40B26005F1A86 /* InventoryDetail.swift in Sources */,
 				4C72DE9C24A78D8C00BAA3FF /* Common.swift in Sources */,
-				4CE3B6B424A8142500128BEA /* InventoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,7 +294,6 @@
 				4CAE595C24A3FC3B005F1A86 /* Inventory.swift in Sources */,
 				4CAE595F24A40B26005F1A86 /* InventoryDetail.swift in Sources */,
 				4C72DE9D24A78D8C00BAA3FF /* Common.swift in Sources */,
-				4CE3B6B524A8142500128BEA /* InventoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
