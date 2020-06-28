@@ -41,7 +41,7 @@ struct InventoryDetail: View {
                     Spacer()
                 }
                 .padding(.all)
-                .font(Font.headline.smallCaps())
+                .font(.title)
                 .background(Color.red)
                 .foregroundColor(.yellow)
                 .transition(.move(edge: .bottom))
