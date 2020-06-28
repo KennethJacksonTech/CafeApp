@@ -13,16 +13,26 @@ struct InventoryDetail: View {
     
     var body: some View {
         VStack {
-            Spacer(minLength: 0)
+           //Spacer(minLength: 0)
             
-            Image(systemName: "photo")
+            Image(sandwich.thumbnailName)
                 .resizable()
+                .cornerRadius(20)
                 .aspectRatio(contentMode: zoomed ? .fill : .fit)
+                .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
                 .onTapGesture {
                     withAnimation {
                         zoomed.toggle()
                     }
                 }
+            Text(sandwich.name)
+                .font(.title)
+                .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+            Text(sandwich.description)
+                .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+            Text("$\(sandwich.price, specifier: "%.2f")")
+                .font(.largeTitle)
+                .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
             
             Spacer(minLength: 0)
             
