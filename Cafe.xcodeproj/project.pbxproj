@@ -75,6 +75,10 @@
 				4CAE593924A3F4D7005F1A86 /* CafeApp.swift */,
 				4CAE593A24A3F4D7005F1A86 /* ContentView.swift */,
 				4C72DE9B24A78D8C00BAA3FF /* Common.swift */,
+				4CAE595A24A3FC3B005F1A86 /* Inventory.swift */,
+				4CE3B6B324A8142500128BEA /* InventoryCell.swift */,
+				4CAE595D24A40B26005F1A86 /* InventoryDetail.swift */,
+				4C2DDB4024A444F900125A2C /* InventoryStore.swift */,
 				4CAE593B24A3F4DA005F1A86 /* Assets.xcassets */,
 				4CE3B6B624A81F2300128BEA /* Model */,
 				4CE3B6B724A81F3300128BEA /* Orders */,
@@ -174,10 +178,6 @@
 		4CE3B6BE24A8204B00128BEA /* Inventory */ = {
 			isa = PBXGroup;
 			children = (
-				4C2DDB4024A444F900125A2C /* InventoryStore.swift */,
-				4CAE595A24A3FC3B005F1A86 /* Inventory.swift */,
-				4CAE595D24A40B26005F1A86 /* InventoryDetail.swift */,
-				4CE3B6B324A8142500128BEA /* InventoryCell.swift */,
 			);
 			path = Inventory;
 			sourceTree = "<group>";
